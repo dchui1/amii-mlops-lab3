@@ -27,8 +27,6 @@ def form():
 		del formData['csrf_token']
 		features = formData.values()
         
-		
-
 		features = list(map(float, features))
 		# features = list(features.values())
 		# features = list(map(float, features))
@@ -38,16 +36,6 @@ def form():
 		return render_template("result.html", prediction = prediction)
 		# return redirect('/result')
 	return render_template('form.html', form=form)
-
-
-def convertSex(sexInput):
-    if sexInput == 'female':
-        return 0.050680
-    elif sexInput == "male":
-        return -0.044642
-    else:
-        raise ValueError(f"Unknown sex {sexInput}")
-
 
 
 """
