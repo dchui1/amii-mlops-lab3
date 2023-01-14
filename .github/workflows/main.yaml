@@ -1,6 +1,8 @@
 name: lab3-workflow
 run-name: ${{ github.actor }} is  deploying a new model
 on: [push]
+permissions:
+  contents: write
 jobs:
   deploy-model:
     runs-on: ubuntu-latest
