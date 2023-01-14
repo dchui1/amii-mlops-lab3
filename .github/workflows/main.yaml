@@ -2,7 +2,7 @@ name: amii-lab3-workflow
 run-name: ${{ github.actor }} is  deploying a new model
 on: [push]
 jobs:
-  check-bats-version:
+  deploy-model:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
