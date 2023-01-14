@@ -11,5 +11,5 @@ jobs:
         shell: bash
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated deployment
+          commit_message: Automated deployment 
           branch: main
